@@ -1,0 +1,65 @@
+<!--
+
+HIC Project 1: 8 Golden Rules of Interface Design
+Matthew DeProfio
+feedback.html is the source code for the Feedback (pg3) page of my application.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIC Project 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>8 Golden Rules of Interface Design</h1>
+    </header>
+
+    <nav>
+        <a href="opening.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="shortcuts.html">Shortcuts</a>
+        <a href="feedback.html">Feedback/Error Handling</a>
+        <a href="closure.html">Closure</a>
+        <a href="reversal.html">Reversal</a>
+        <a href="control.html">User Control</a>
+        <a href="memory.html">Memory Load</a>
+    </nav>
+
+    <main>
+        <h2>Feedback & Error Handling</h2>
+        <h3>Golden Rules 3 & 4: Informative Feedback and Simple Error Handling</h3>
+        
+        <ul>
+            <li>This page of the application demonstrates two Golden Rules: Offer Informative Feedback and Offer Simple Error Handling.</li>
+            <li>Informative feedback means that users should receive clear information about what happens after they perform an action.</li>
+            <li>Simple error handling means that users should be told when an error occurs and how to correct it.</li>
+            <li>Leave the name field blank and click submit. Then enter your name and submit again to correct the error.</li>
+        </ul>
+    
+        <h4>Example 1: Action Feedback.</h4>
+        <p>Click the button below to submit an action.</p>
+        <button id="submit-button">Submit Action</button>
+        <p id="action-message"></p>
+
+        <h4>Example 2: Input Feedback & Error Handling</h4>
+        <p>Enter your name and click submit.</p>
+        <input type="text" id="name-input">
+        <button id="name-button">Submit</button>
+        <p id="input-message"></p>
+
+        <a href="closure.html" class="next-button">Next -></a>
+        <a href="shortcuts.html" class="previous-button"><- Previous</a>
+        </h3>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

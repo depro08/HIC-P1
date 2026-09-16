@@ -1,0 +1,69 @@
+<!--
+
+HIC Project 1: 8 Golden Rules of Interface Design
+Matthew DeProfio
+control.html is the source code for the Control page (pg6) of my application.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIC Project 1 - Shortcuts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>8 Golden Rules of Interface Design</h1>
+    </header>
+
+    <nav>
+        <a href="opening.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="shortcuts.html">Shortcuts</a>
+        <a href="feedback.html">Feedback/Error Handling</a>
+        <a href="closure.html">Closure</a>
+        <a href="reversal.html">Reversal</a>
+        <a href="control.html">User Control</a>
+        <a href="memory.html">Memory Load</a>
+    </nav>
+
+    <main>
+        <h2>Control</h2>
+        <h3>Golden Rule 7: Support Internal Locus of Control</h3>
+
+        <ul>
+            <li>This page demonstrates the Golden Rule: Support Internal Locus of Control.</li>
+            <li>This means that users should feel that they are in control of the application and that the application responds to their actions.</li>
+            <li>The example below allows users to choose how the application uses their location.</li>
+        </ul>
+
+        <h4>Location Permission.</h4>
+        <p>Click the button below to manage location access.</p>
+
+        <button id="location-button">Manage Location Access</button>
+
+        <p id="control-message"></p>
+
+        <p><strong>Note:</strong> The application will NOT track your location regardless of which answer you choose, it's just for example purposes.</p>
+        <div id="location-popup" class="loc-popup">
+            <div class="loc-popup-content">
+                <p>Allow this application to access your device's precise location?</p>
+                <button id="allow">Allow</button>
+                <button id="while-using">Allow While Using</button>
+                <button id="deny">Don't Allow</button>
+            </div>
+        </div>
+
+        <a href="memory.html" class="next-button">Next -></a>
+        <a href="reversal.html" class="previous-button"><- Previous</a>
+    </main>
+
+    <script src="script.js"></script>
+
+    </body>
+    </html>

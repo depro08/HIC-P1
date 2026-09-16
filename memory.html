@@ -1,0 +1,101 @@
+<!--
+
+HIC Project 1: 8 Golden Rules of Interface Design
+Matthew DeProfio
+memory.html is the source code for the Memory page (pg7) of my application.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIC Project 1 - Shortcuts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>8 Golden Rules of Interface Design</h1>
+    </header>
+
+    <nav>
+        <a href="opening.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="shortcuts.html">Shortcuts</a>
+        <a href="feedback.html">Feedback/Error Handling</a>
+        <a href="closure.html">Closure</a>
+        <a href="reversal.html">Reversal</a>
+        <a href="control.html">User Control</a>
+        <a href="memory.html">Memory Load</a>
+    </nav>
+
+    <main>
+        <h2>Memory Load</h2>
+        <h3>Golden Rule 8: Reduce Short Term Memory Load</h3>
+
+        <ul>
+            <li>This page demonstrates the Golden Rule: Reduce Short Term Memory Load.</li>
+            <li>This means that users should not have to process or remember too much information at one time.</li>
+            <li>The example below gives a simulation that divides an account setup form into smaller steps so users only need to focus on a few fields at a time.</li>
+        </ul>
+
+        <h4 id="step-title">Step 1: Personal Information</h4>
+        <div id="step1">
+            <p>Enter your personal information.</p>
+            <label>Name: <input type="text" id="name"></label>
+            <br><br>
+
+            <label>Email: <input type="email" id="email"></label>
+            <br><br>
+
+            <button id="step1-next">Next</button>
+            <br><br>
+        </div>
+
+        <div id="step2" style="display: none;">
+            <p>Enter your account information.</p>
+            <label>Username: <input type="text" id="username"></label>
+            <br><br>
+
+            <label>Password: <input type="password" id="password"></label>
+            <br><br>
+
+            <button id="step2-back">Back</button>
+            <button id="step2-next">Next</button>
+            <br><br>
+        </div>
+
+        <div id="step3" style="display: none;">
+            <p>Enter your contact information.</p>
+            <label>Phone: <input type="text" id="phone"></label>
+            <br><br>
+
+            <label>Security Question: <select id="security">
+                <option value="">Select a question:</option>
+                <option>What was the name of your first pet?</option>
+                <option>What is your favorite color?</option>
+                <option>What city were you born in?</option>
+                <option>What was the first school you attended?</option>
+                <option>What is your oldest sibling's middle name?</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label>Answer: <input type="text" id="answer"></label>
+        <br><br>
+
+            <button id="step3-back">Back</button>
+            <button id="submit">Create Account</button>
+            <br><br>
+        </div>
+
+        <a href="control.html" class="previous-button"><- Previous</a>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

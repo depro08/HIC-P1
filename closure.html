@@ -1,0 +1,69 @@
+<!--
+
+HIC Project 1: 8 Golden Rules of Interface Design
+Matthew DeProfio
+shortcuts.html is the source code for the Shortcuts page (pg4) of my application.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIC Project 1 - Shortcuts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>8 Golden Rules of Interface Design</h1>
+    </header>
+
+    <nav>
+        <a href="opening.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="shortcuts.html">Shortcuts</a>
+        <a href="feedback.html">Feedback/Error Handling</a>
+        <a href="closure.html">Closure</a>
+        <a href="reversal.html">Reversal</a>
+        <a href="control.html">User Control</a>
+        <a href="memory.html">Memory Load</a>
+    </nav>
+
+    <main>
+        <h2>Closure</h2>
+        <h3>Golden Rule 5: Design Dialogue To Yield Closure</h3>
+
+        <ul>
+            <li>This page of the application demonstrates the Golden Rule: Design Dialogue to Yield Closure.</li>
+            <li>This means that users should receive a clear indication when an action or process has been completed.</li>
+            <li>The example below allows users to submit a response and receive a clear confirmation when the action is complete.</li>
+        </ul>
+
+        <h4>Submit a Response</h4>
+        <p>Enter a response about something you have learned so far:</p>
+        <textarea id="learning-response" rows="4" cols="50"></textarea>
+        
+        <br><br>
+
+        <button id="submit-response">Submit Response</button>
+        <br><br>
+
+        <div id="success-popup" class=popup>
+            <div class="popup-content">
+                <h4>Success.</h4>
+                <p>Your response has been submitted!</p>
+                <button id="ok-button">OK</button>
+            </div>
+        </div>
+
+        <a href="reversal.html" class="next-button">Next -></a>
+        <a href="feedback.html" class="previous-button"><- Previous</a>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

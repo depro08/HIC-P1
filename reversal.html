@@ -1,0 +1,60 @@
+<!--
+
+HIC Project 1: 8 Golden Rules of Interface Design
+Matthew DeProfio
+reversal.html is the source code for the Reversal page (pg5) of my application.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIC Project 1 - Shortcuts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>8 Golden Rules of Interface Design</h1>
+    </header>
+
+    <nav>
+        <a href="opening.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="shortcuts.html">Shortcuts</a>
+        <a href="feedback.html">Feedback/Error Handling</a>
+        <a href="closure.html">Closure</a>
+        <a href="reversal.html">Reversal</a>
+        <a href="control.html">User Control</a>
+        <a href="memory.html">Memory Load</a>
+    </nav>
+
+    <main>
+        <h2>Reversal</h2>
+        <h3>Golden Rule 6: Permit Easy Reversal Of Actions</h3>
+
+        <ul>
+            <li>This page demonstrates the Golden Rule: Permit Easy Reversal of Actions.</li>
+            <li>This means that users should be able to easily undo an action and return to the previous state.</li>
+            <li>The example below allows users to enlarge the text and then undo the change if they want to return to the original size.</li>
+        </ul>
+
+        <h4>Change Text Size</h4>
+        <p id="text-example">Use the buttons below to change the size of this line.</p>
+        <button id="large-text">Large Text</button>
+        <button id="undo-text">Undo</button>
+        <p id="reversal-message"></p>
+
+        <br><br>
+
+        <a href="control.html" class="next-button">Next -></a>
+        <a href="closure.html" class="previous-button"><- Previous</a>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
